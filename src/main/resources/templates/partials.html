@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <title>Home</title>
     <!-- include stylesheets, etc here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<nav th:fragment="navbar">
+<nav th:fragment="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
     <!-- awesome navbar goes here -->
+
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" data-toggle="collapse" data-target="#collapse_target">--%>
+        <span class="navbar-toggler-icon"></span>--%>
+        </button>--%>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container-fluid collapse navbar-collapse" id="collapse_target">
+
+            <a class="navbar-brand nav-text text-warning">Spring Blog</a>
+
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="/hello">Hello Controller</a> </li>
+
+            </ul>
+        </div>
 </nav>
 </body>
 </html>

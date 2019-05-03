@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <th:block th:include="fragments/navbar::bootstrapCSS"/>
+    <meta charset="UTF-8"/>
     <title>Title</title>
+
 </head>
 <body>
+<th:block th:include="fragments/navbar::navbar"/>
+
+<h1>The random number is: <span th:text="${RandomNumber}"></span></h1>
+<h1>You <span th:text="${Result}"></span> !</h1>
+
+
+
 
 </body>
 </html>
